@@ -35,7 +35,7 @@ The following code solves this math problem
  -------------------
      55.6 - 30.2 */
       
-        System.out.println((6.0*3.5-1.5*5.0))/(55.6-30.2));
+        System.out.println((6.0*(3.5-1.5*5.0))/(55.6-30.2));
 
     }
 }
