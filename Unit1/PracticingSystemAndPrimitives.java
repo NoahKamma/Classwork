@@ -7,21 +7,38 @@ Task 1: Print out your name using the letter "O" in ASCII art.
 
 Example output:
 
-OOOOO    OO   OOOOO   OO    OO
-  O     O  O  O         O  O
-  O     O  O  OOO        OO
-O O     O  O  O          OO
- O       OO   OOOOO      OO
+public class Main {
+    
+//This prints Noah in ASCII Art
+    public static void main(String[] args)
+    {
+        System.out.println("O    O   OO    OO   O  O");
+        System.out.println("O O  O  O  O  O  O  O  O");
+        System.out.println("O  O O  O  O  OOOO  OOOO");
+        System.out.println("O   OO  O  O  O  O  O  O");
+        System.out.println("O    O   OO   O  O  O  O");
+    }
+}
 
 Task 2: Write code to compute the following math problem:
 
+
+
+public class Main {
+    
+
+    public static void main(String[] args)
+    {
+      /* 
+The following code solves this math problem
 6.0 x (3.5 - 1.5 x 5)
--------------------
-    55.6 - 30.2
+ -------------------
+     55.6 - 30.2 */
+      
+        System.out.println((6.0*3.5-1.5*5.0))/(55.6-30.2));
 
-Example output:
-
-0.531496062992126
+    }
+}
   
 Task 3: Write adaptable code that will print out the circumference and area of a circle that has a radius of 4.0. (Hint: the value of pi is 3.14 and it never changes)
 
