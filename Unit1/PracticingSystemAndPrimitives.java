@@ -45,8 +45,8 @@ The following code solves this math problem
   
 Task 3: Write adaptable code that will print out the circumference and area of a circle that has a radius of 4.0. (Hint: the value of pi is 3.14 and it never changes)
 
-    //Empty radius variable for the user to input
-double Radius = ( );
+    //Radius variable for the user to input
+double Radius = (4.0);
 
 //Print the circumfence and area of the circle here
     System.out.print("The circumference of the circle is " + (2.0*3.14*Radius) + " and the area of the circle is "+ (3.14*Radius*Radius) + ".");
