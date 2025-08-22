@@ -31,9 +31,12 @@ public class Main {
     {
       /* 
 The following code solves this math problem
+
 6.0 x (3.5 - 1.5 x 5)
  -------------------
-     55.6 - 30.2 */
+     55.6 - 30.2 
+   
+     */
       
         System.out.println((6.0*(3.5-1.5*5.0))/(55.6-30.2));
 
@@ -42,6 +45,9 @@ The following code solves this math problem
   
 Task 3: Write adaptable code that will print out the circumference and area of a circle that has a radius of 4.0. (Hint: the value of pi is 3.14 and it never changes)
 
-Example output: 
+    //Empty radius variable for the user to input
+double Radius = ( );
 
-The circumference of the circle is 25.2152 and the area of the circle is 50.4304.
+//Print the circumfence and area of the circle here
+    System.out.print("The circumference of the circle is " + (2.0*3.14*Radius) + " and the area of the circle is "+ (3.14*Radius*Radius) + ".");
+
