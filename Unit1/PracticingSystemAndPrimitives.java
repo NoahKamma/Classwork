@@ -50,11 +50,14 @@ public class Main {
     
 
     public static void main(String[] args)
-   
+
+    //Placeholder for Pi, which is used for the formulas
+final double pi = 3.14
+    
     //Radius variable for the user to input to calculate the area and circumference
 double Radius = (4.0);
 
 //Print the circumfence and area of the circle here
-    System.out.print("The circumference of the circle is " + (2.0*3.14*Radius) + " and the area of the circle is "+ (3.14*Radius*Radius) + ".");
+    System.out.print("The circumference of the circle is " + (2.0*pi*Radius) + " and the area of the circle is "+ (pi*Radius*Radius) + ".");
     }
 }
