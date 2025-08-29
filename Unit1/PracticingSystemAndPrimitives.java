@@ -52,7 +52,7 @@ public class Main {
     public static void main(String[] args)
 
     //Placeholder for Pi, which is used for the formulas
-final double pi = 3.14
+final double pi = 3.14;
     
     //Radius variable for the user to input to calculate the area and circumference
 double Radius = (4.0);
