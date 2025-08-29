@@ -11,8 +11,8 @@ public class CubeCalculator {
 		double sideLength = 2;
 
 		//This uses the formulas for surface area and volume to calculate them
-				double surfaceArea = 6 * sideLength * sideLength;
-				double volume = sideLength*sideLength*sideLength;
+				double surfaceArea = 6 * sideLength * sideLength; //Formula Sufrace Area: 6a²
+				double volume = sideLength*sideLength*sideLength; //Formula Volume: a³
 				
 				
 				//This prints out the cube's surface area and volume as Ints in a full sentence
