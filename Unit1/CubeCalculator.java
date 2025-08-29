@@ -10,8 +10,8 @@ public class CubeCalculator {
 //Assign your cube's side length here, so the class can reference from it
 		double sideLength = 2;
 
-		//This uses the formulas for surface area and volume to calculate them
-				double surfaceArea = 6 * sideLength * sideLength; //Formula Sufrace Area: 6a²
+		//This uses the respective formulas for surface area and volume to calculate them
+				double surfaceArea = 6 * sideLength * sideLength; //Formula Surface Area: 6a²
 				double volume = sideLength*sideLength*sideLength; //Formula Volume: a³
 				
 				
