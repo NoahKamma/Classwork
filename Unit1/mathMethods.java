@@ -116,7 +116,7 @@ public class mathMethods {
 	
 	public static void getRandomNum() {
 		
-		System.out.println("Random Number: "+((int)(10*(java.lang.Math.random()))+0.1+11));
+		System.out.println("Random Number: "+((int)(10*(java.lang.Math.random()))+11));
 		
 	}
 }
