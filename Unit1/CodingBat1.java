@@ -20,7 +20,8 @@ public String makeAbba(String a, String b) {
 
 
 /*
-*
+*This returns a word with tags around it 
+*Ex: "<i>Hi</i>"
 */
 public String makeTags(String tag, String word) {
   return "<"+tag+">"+word+"<"+"/"+tag+">";
@@ -29,7 +30,7 @@ public String makeTags(String tag, String word) {
 //firstHalf
 
 /*
-*
+*This returs the first half of an even string
 */
 public String firstHalf(String str) {
   int perfectHalf = (str.length())/2;
