@@ -2,22 +2,24 @@ import java.util.Scanner;
 
 
 public class StringIntro {
-
+/*
+ * This will call some methods after the user inputs something
+ */
 	public static void main(String[] args) {
 		
-		//A new scanner object is created here
+		//A new scanner object is created here for the user to input
 		Scanner inputReader = new Scanner(System.in);
 		String str = inputReader.nextLine();
 		
-		//Begin method calling here (The stuff that shows up on the console after an input is added)
+		//The following methods will be called when the scanner object is named
 		addDoubleSpacing();
 		secondAndLastLetter(str);
 		addDoubleSpacing();
 		
-		findTheE(str);
+		System.out.println("The first E takes place within index " + findTheE(str) );
 		addDoubleSpacing();
 		
-		getLength(str);
+		System.out.println("The length is " + getLength(str));
 		addDoubleSpacing();
 		
 		printFirstAndLastThree(str);
@@ -38,23 +40,29 @@ public class StringIntro {
 		
 	}
 
-	public static void findTheE(String str) {
+	/*
+	 * This finds the first e that takes place within the object
+	 */
+	public static int findTheE(String str) {
 		
-		int firstE = str.indexOf('e');
+		return str.indexOf('e');
 		
-		System.out.println("The index of the first e is " + firstE );
+		
+	}
+	
+	/*
+	 * This prints the length of the object
+	 */
+	public static int getLength(String str) {
+		
+		return str.length()-1;
 		
 		
 	}
 	
-	public static void getLength(String str) {
-		
-		int length = str.length();
-		
-		System.out.println("The string is "+ length + " characters long");
-		
-	}
-	
+	/*
+	 * This prints the first and last three letters of the object
+	 */
 	public static void printFirstAndLastThree(String str) {
 		
 		String firstThreeChars = str.substring(0,3);
@@ -65,7 +73,8 @@ public class StringIntro {
 	}
 	
 	/*
-	 * This adds an empty line to imitate double space whenever called
+	 * This adds an empty line to imitate double spacing whenever called
+	 * For neatness!
 	 */
 	public static void addDoubleSpacing() {
 		
