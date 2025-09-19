@@ -25,16 +25,16 @@ public class ShapesMain
 			//Print out myCirc1 radius
 			System.out.println(myCirc1.getRadius());
 			
-			//
+			//This prints the circumference of Circ1
 			System.out.println(myCirc1.getCircumf());
 			
-			//
+			//This prints the area of Circ1
 			System.out.println(myCirc1.getArea());
 		
-			//
+			//This prints the degrees of the circle object
 			System.out.println(Circle.getDegrees());
 			
-			//This calls a method from "Circle" class to state the purpose of this current class
+			//This calls a method from "Circle" class to state the purpose of this class
 			Circle.stateShape();
 		}
 	
