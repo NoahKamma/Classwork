@@ -70,3 +70,43 @@ public boolean squirrelPlay(int temp, boolean isSummer) {
 
 }
 
+//caughtSpeeding
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  if(isBirthday == true)
+  {
+    if(speed>=86)
+    {
+      return 2;
+    }
+    else
+    {
+      if(speed<=65)
+      {
+        return 0;
+      }
+      else
+      {
+        return 1;
+      }
+    }
+  }
+  else
+  {
+    if(speed>=81)
+    {
+      return 2;
+    }
+    else
+    {
+      if(speed<=60)
+      {
+        return 0;
+      }
+      else
+      {
+        return 1;
+      }
+    }
+  }
+  
+}
