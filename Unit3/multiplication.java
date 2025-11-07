@@ -5,8 +5,8 @@ public class multiplication {
 	{
 		System.out.println(multiply(6,4));
 		System.out.println(multiply(5,5));
-		System.out.println(multiply(3,2));
-		System.out.println(multiply(67,1));
+		System.out.println(multiply(3,-2));
+		System.out.println(multiply(-67,1));
 		System.out.println(multiply(-5,-5));
 	}
 
