@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class StringsPracticeForProject {
-
+	//Static scanner object to access
 	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
@@ -46,24 +46,32 @@ public class StringsPracticeForProject {
 		String answer = input.nextLine();
 		return answer;
 	}
-	
+
+	//Creates an input double and returns it, likewise
 	public static double inputDouble()
 	{
 		double answer=input.nextDouble();
 		return answer;
 	}
-	
+
+	/*
+	*Make a circle object and iterate five times, each time asking for a double.
+	*Then print the original radius and the sum of it along with the five doubles
+	*/
 	public static void taskTwo()
 	{
+		//Prompt user for double and create object
 		System.out.println("Input your circle's radius.");
 		Circle circle = new Circle(inputDouble());
-		
+
+		//Input a double for every iteration; a total of five iterations
 		for(int i=0; i<5; i++)
 		{
 			System.out.println("Input a double.");
 			circle.incRadius(inputDouble());
 		}
-		
+
+		//Print original radius and cumulative radius
 		System.out.println("Your circle started with a radius of " + circle.getRadius() + " and ended with a radius of " + circle.getSum());
 		
 	}
