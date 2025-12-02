@@ -13,7 +13,7 @@ public class BasicWordle
 		setArrays();
 		setMultiChar();
 		
-		
+		//Instructions and prompt the user to enter answer 
 		System.out.println("Please make a guess! (No numbers, lowercase, 5 letter long answer)");
 		System.out.println("X = letter is not found in answer");
 		System.out.println("? = letter is found in answer but in the wrong place");
@@ -23,6 +23,9 @@ public class BasicWordle
 		input.close();
 	}
 	
+	/*
+	 * The game script itself that holds all the code for the actual game
+	 */
 	public static void game()
 	{
 		//Variable for player attempts
@@ -201,25 +204,25 @@ public class BasicWordle
 			//Look at the previous indexes of iterated index; iterated index to each previous index
 			for(int preI=i-1; preI>0; preI--)
 			{
-				//
+				//If iterated char matches a previous char
 				if(starWord[i]==starWord[preI])
-				{
+				{//If there are not instances of char, add a new char to multiChar array
 					if(multiChar[0].Char()=='X'){
 						multiChar[0].newChar(starWord[i]);
 					}
 					else
-					{
+					{//If it matches the first index of char in multiChar, 
 						if(multiChar[0].Char()==starWord[i]) {
 							multiChar[0].add();
 						}
 						else
-						{
+						{//If there is a multiChar in the first index and it does not match, make a second new multiChar index
 							if(multiChar[1].Char()=='X') {
 								multiChar[0].newChar(starWord[i]);
 							}
 							else
 							{
-								//MultiChar==starWord
+								//If previous above is false, add the char as a second multiChar
 								multiChar[1].add();
 							}
 						}
@@ -303,4 +306,4 @@ public class BasicWordle
 		
 	}
 }
-	Ba
+	
