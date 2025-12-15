@@ -260,8 +260,8 @@ public class Console {
 			int iteration=i;
 			
 			String line = new String(sample.substring(0,sample.indexOf("\n")));
-			int typingTime=line.length()*5;
-			int readingTime=line.length()*5;
+			int typingTime=line.length()*35;
+			int readingTime=line.length()*20;
 			
 			
 			
