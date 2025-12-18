@@ -114,9 +114,14 @@ public class Console {
 		{
 			emptyLine();
 			printLine("Type in one of the choices below:",Color.GRAY);
-			printLine(lineNumAt(decisions,1),Color.GRAY);
-			printLine(lineNumAt(decisions,2),Color.GRAY);
-			printLine(lineNumAt(decisions,3),Color.GRAY);
+			
+			String choiceOne = new String (lineNumAt(decisions,1));
+			String choiceTwo = new String (lineNumAt(decisions,2));
+			String choiceThree = new String (lineNumAt(decisions,3));
+			
+			printLine(choiceOne,Color.GRAY);
+			printLine(choiceTwo,Color.GRAY);
+			printLine(choiceThree,Color.GRAY);
 			
 		}
 			
@@ -130,6 +135,11 @@ public class Console {
 					if(answer.contains(keyOne))
 					{
 						Main.answerDecisions=1;
+						emptyLine();
+						emptyLine();
+						printLine("<"+Main.name+">: "+ lineNumAt(decisions,1) );
+						
+						
 						Main.callback();
 						textField.removeActionListener(this);
 					}
@@ -138,6 +148,9 @@ public class Console {
 						if(answer.contains(keyTwo))
 						{
 							Main.answerDecisions=2;
+							emptyLine();
+							printLine("<"+Main.name+">: "+ lineNumAt(decisions,2) );
+							
 							Main.callback();
 							textField.removeActionListener(this);
 						}
@@ -146,6 +159,9 @@ public class Console {
 							if(answer.contains(keyThree))
 							{
 								Main.answerDecisions=3;
+								emptyLine();
+								printLine("<"+Main.name+">: "+ lineNumAt(decisions,3) );
+								
 								Main.callback();
 								textField.removeActionListener(this);
 							}
@@ -160,7 +176,7 @@ public class Console {
 			}
 		});
 	}
-	
+
 	public void promptDecisions(String decisions, String keyOne, String keyTwo)
 	{
 		//Print when first called, ignore on recursion
@@ -168,8 +184,12 @@ public class Console {
 		{
 			emptyLine();
 			printLine("Type in one of the choices below:",Color.GRAY);
-			printLine(lineNumAt(decisions,1),Color.GRAY);
-			printLine(lineNumAt(decisions,2),Color.GRAY);
+			
+			String choiceOne = new String (lineNumAt(decisions,1));
+			String choiceTwo = new String (lineNumAt(decisions,2));
+			
+			printLine(choiceOne,Color.GRAY);
+			printLine(choiceTwo,Color.GRAY);
 			
 		}
 			
@@ -183,6 +203,10 @@ public class Console {
 					if(answer.contains(keyOne))
 					{
 						Main.answerDecisions=1;
+						emptyLine();
+						printLine("<"+Main.name+">: "+ lineNumAt(decisions,1) );
+						
+						
 						Main.callback();
 						textField.removeActionListener(this);
 					}
@@ -191,6 +215,9 @@ public class Console {
 						if(answer.contains(keyTwo))
 						{
 							Main.answerDecisions=2;
+							emptyLine();
+							printLine("<"+Main.name+">: "+ lineNumAt(decisions,2) );
+							
 							Main.callback();
 							textField.removeActionListener(this);
 						}
