@@ -21,13 +21,13 @@ public class Console {
 	protected JLabel text;
 	protected static JScrollPane scrollPane;
 	private Timer timer;
-	
+
+	//Static int to refer for promptDecisions funcion
 	private int recursion = 0;
 	
 	//A static string to carry any string throughout functions.
 	private String answer = new String("");
-	
-	
+
 	public Console()
 	{
 		initialize();
@@ -108,7 +108,13 @@ public class Console {
 		});
 	}
 	
-	
+	/*
+	*Prompt the user to decide from three choices.
+	*
+	*pass a Text.decisions function into decisions to print the user's options
+	*pass a specific word into keyOne, keyTwo and keyThree. The function decides 
+	*
+	*/
 	public void promptDecisions(String decisions, String keyOne, String keyTwo, String keyThree)
 	{
 		//Print when first called, ignore on recursion
@@ -179,6 +185,13 @@ public class Console {
 		});
 	}
 
+	/*
+	*Prompt the user to decide from two choices.
+	*
+	*pass a Text.decisions function into decisions to print the user's options
+	*pass a specific word into keyOne and keyTwo The function decides 
+	*
+	*/
 	public void promptDecisions(String decisions, String keyOne, String keyTwo)
 	{
 		//Print when first called, ignore on recursion
