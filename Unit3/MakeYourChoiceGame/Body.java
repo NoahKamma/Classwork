@@ -1,6 +1,10 @@
 package MakeYourChoiceGame;
 
 public class Body {
+
+	/*
+	*String that contains the contract body
+	*/
 	public String waiver()
 	{
 		return "---------------------------------------------------------------------------------------------------------------------\n"
