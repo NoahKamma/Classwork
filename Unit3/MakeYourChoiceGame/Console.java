@@ -38,24 +38,26 @@ public class Console {
 	 */
 	public void initialize()
 	{
-		
+		//Initialize empty component objects
 		frame= new JFrame();
 		panel = new JPanel();
 		scrollPane = new JScrollPane(panel);
 		textField = new JTextField();
-		
+
+		//Customize frame
 		frame.setLayout(new BorderLayout());
 		frame.setBackground(Color.BLACK);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	    frame.setSize(300, 200);
-	 
+
+		//Set the consoel color green and black
 	    panel.setBackground(Color.BLACK);
 	    panel.setForeground(Color.GREEN);
 	    
 	  //Initialize new field object and action 
 		
 		
-		//Layout for scrolling
+		//Create a layout for scrolling: Put a scroll pane in center of frame box layout
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		textField.setForeground(Color.GREEN);
 		textField.setBackground(Color.BLACK);
