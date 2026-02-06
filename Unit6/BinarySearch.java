@@ -12,7 +12,7 @@ public class BinarySearch {
 		int min=0;
 		int max=arr.length-1;
 		
-		//Stop iteration when target is not present in array
+		//Stop iteration when min and max overlap (max < min)
 		while(min<=max)
 		{
 			//Determine middle element (mid) and access it
