@@ -8,7 +8,7 @@ public class BinarySearch {
 	
 	public static int binarySearch(int target,int[] arr)
 	{
-		//Initialize variables
+		//Determine range of the search
 		int min=0;
 		int max=arr.length-1;
 		
