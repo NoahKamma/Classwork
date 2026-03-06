@@ -15,6 +15,8 @@ public class Board {
 	private String[] symbols= {"X","O"};
 	private int symbolsMod=0;
 	
+	private int count=0;
+	
 	
 	
 	public Board()
@@ -58,17 +60,15 @@ public class Board {
 					System.out.println("Game over! "+symbols[symbolsMod%2] +" wins!");
 					System.out.println("Run 'Main' to replay...");
 					
-					for(int a=0;a<3;a++)
-					{
-						for(int b=0;b<3;b++)
-						{
-							for(ActionListener l:grid[a][b].getActionListeners())
-							{
-								grid[a][b].removeActionListener(l);
-							}
-						}
-					}
+					removeActionListeners();
 					
+				}
+				else if(count>=9)
+				{
+					System.out.println("Tie!");
+					System.out.println("Run 'Main' to replay...");
+					
+					removeActionListeners();
 				}
 				
 				
@@ -129,6 +129,7 @@ public class Board {
 			}
 		}
 		symbolsMod++;
+		count++;
 		return false;
 	}
 	
@@ -137,6 +138,20 @@ public class Board {
 		a.setForeground(Color.red);
 		b.setForeground(Color.red);
 		c.setForeground(Color.red);
+	}
+	
+	public void removeActionListeners()
+	{
+		for(int a=0;a<3;a++)
+		{
+			for(int b=0;b<3;b++)
+			{
+				for(ActionListener l:grid[a][b].getActionListeners())
+				{
+					grid[a][b].removeActionListener(l);
+				}
+			}
+		}
 	}
 	
 	
