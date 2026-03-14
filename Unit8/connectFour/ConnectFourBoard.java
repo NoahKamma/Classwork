@@ -222,7 +222,7 @@ public class ConnectFourBoard {
 		}
 		
 		//If there is no winning moves when the board is full, end the game
-		if(count>=49)
+		if(count>=42)
 		{
 			removeActionListeners();
 			System.out.println("It's a Tie! Re-run 'Main' again to play again!");
