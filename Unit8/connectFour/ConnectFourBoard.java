@@ -25,7 +25,7 @@ public class ConnectFourBoard {
 	private int colorsMod=0;
 		
 	//Turn count
-	private int count=0;
+	private int count=1;
 		
 		
 		
