@@ -49,11 +49,8 @@ public class ArrayListIntro {
 		int intLast =intArrList.get(intArrList.size()-1);
 		String strLast = new String(stringArrList.get(stringArrList.size()-1));
 		
-		intArrList.remove(intLast);
-		stringArrList.remove(stringArrList);
-		
-		System.out.println(intLast);
-		System.out.println(strLast);
+		System.out.println(intArrList.remove(intLast));
+		System.out.println(strArrList.remove(strLast));
 		
 	
 	}
