@@ -29,7 +29,7 @@ public int fibonacci(int n) {
   {
     return 0;
   }
-  else if(n==0 ||n==1)
+  else if(n==1)
   {
     return n;
   }
