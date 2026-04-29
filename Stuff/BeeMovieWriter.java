@@ -17,10 +17,10 @@ public class BeeMovieWriter {
 			//Practice code tracing here
 			BufferedWriter writer = new BufferedWriter(new FileWriter("beemovie.txt"));
 			
-			int in=0;
+			int in=str.indexOf("\n",0);
 			int i=0;
 			int j=0;
-			while(!(str.indexOf("\n",j)==-1))
+			while(!(in==-1))
 			{
 				j=str.indexOf("\n",j)+1;
 				
@@ -30,7 +30,7 @@ public class BeeMovieWriter {
 				
 				writer.newLine();
 				
-				
+				in=str.indexOf("\n",j);
 				
 			}
 			
