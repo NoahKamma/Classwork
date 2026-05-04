@@ -22,7 +22,7 @@ public class RecursiveBinarySearch {
 		int mIn=l+(r-l)/2;
 		int mNum = arr[mIn];
 		
-		//Return -1 when the possible last index does not contain target
+		//Return -1 when the possible last index (or m) does not contain target
 		if(l<=r)
 		{
 			//Return the index of m
