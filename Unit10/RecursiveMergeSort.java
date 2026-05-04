@@ -19,20 +19,31 @@ public class RecursiveMergeSort {
 
 	}
 	
-	
+	/*
+	 * Sorts by:
+	 * successively dividing the passed array into two halves, (from two halves, four, eighht, etc.)
+	 * before successively merging the halves into sorted order.
+	 */
 	public static void mergeSort(int l, int r, int[]arr)
 	{
+		//Keep dividing until the halved size is one element
 		if(l<r)
 		{
+			//Create two halves by splitting the array in the middle.
 			int m=l+(r-l)/2;
 			
 			mergeSort(l,m,arr);
 			mergeSort(m+1,r,arr);
 			
+			//Merge each half, starting from the smallest halves, to the complete array
 			merge(l,m,r,arr);
 		}
 	}
 	
+	/*
+	 * The merge and sort logic of mergeSort. Sorts all of the elements from the two halves
+	 * of the array/sub-array, within the actual parameters of index l and r.
+	 */
 	public static void merge(int l, int m, int r, int[]arr)
 	{
 		//The sizes of the two subarrays
@@ -63,7 +74,7 @@ public class RecursiveMergeSort {
 		while(i<n1 && j<n2)
 		{
 			//Copy the lesser int of the checked indexes of the right and left subarrays
-			//Traverse the arr & subarrays until all 
+			//Traverse the arr & subarrays until all "unsorted elements" are sorted into arr
 			if (lArr[i] <= rArr[j]) 
 			{
 
@@ -79,15 +90,14 @@ public class RecursiveMergeSort {
             k++;
 		}
 		
-		//Copy the leftover ints of the left arr
+		//From the left to the right half, copy the remaining elements that
+		//are already in sorted order, if any
         while (i < n1) 
         {
             arr[k] = lArr[i];
             i++;
             k++;
         }
-
-        //Copy the leftover ints of the right arr
         while (j < n2) 
         {
             arr[k] = rArr[j];
