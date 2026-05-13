@@ -1,9 +1,16 @@
 import java.util.ArrayList;
 
+
+/*
+ * This class demonstrates examples of utilizing the 
+ * ArrayList class into algorithms.
+ * Each function, with their respective purposes, all use the ArrayList class.
+ */
 public class ArrayListAlgsProject {
 
 public static void main(String[] args) {
-		
+
+		//Create a new array list, with randomized integers
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		
 		for(int i=0; i<100;i++)
@@ -11,7 +18,9 @@ public static void main(String[] args) {
 			int random = (int)(101*java.lang.Math.random());
 			arr.add(random);
 		}
-		
+
+		//This prints how long it takes to use quicksort on the array list
+		//Note: Quicksort is very unoptimized for array lists
 		int start = (int)System.currentTimeMillis();
 		quickSort(arr,0,arr.size()-1);
 		int end = (int)System.currentTimeMillis();
